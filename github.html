@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stockssutra.com – Stock Market, Mutual Funds, IPO & F&O Insights</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent1:#7c3aed; --accent2:#06b6d4;
+      --glass: rgba(255,255,255,0.04);
+      --maxw:1100px; font-family:'Inter', sans-serif;
+    }
+    *{ box-sizing:border-box; margin:0; padding:0 }
+    body{
+      background:linear-gradient(180deg,var(--bg) 0%, #071029 100%);
+      color:#e6eef8;
+      -webkit-font-smoothing:antialiased;
+    }
+    .container{ max-width:var(--maxw); margin:0 auto; padding:32px }
+
+    /* NAVBAR */
+    .nav{ display:flex; justify-content:space-between; align-items:center; }
+    .brand{ display:flex; align-items:center; gap:12px; }
+    .logo{
+      width:44px; height:44px; border-radius:12px;
+      background:linear-gradient(135deg,var(--accent1),var(--accent2));
+      display:flex; align-items:center; justify-content:center;
+      font-weight:800;
+    }
+    nav ul{ display:flex; gap:18px; list-style:none; }
+    nav a{
+      color:rgba(230,238,248,0.9);
+      text-decoration:none;
+      font-weight:600;
+      font-size:15px;
+    }
+    .cta{
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+      padding:10px 16px;
+      border-radius:10px;
+      font-weight:700;
+    }
+
+    /* HERO */
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 460px;
+      gap:28px;
+      align-items:center;
+      padding:40px 0;
+    }
+    .hero h1{ font-size:44px; line-height:1.03; }
+    .hero p{ margin-top:10px; color:#bcd0e6; }
+    .actions{ margin-top:20px; display:flex; gap:12px;

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Stockssutra - Mutual Funds | IPO | F&O | Market News</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+
+<style>
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent1:#7c3aed;
+  --accent2:#06b6d4;
+  --glass:rgba(255,255,255,0.05);
+  --maxw:1100px;
+  font-family:'Inter', sans-serif;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0;
+  background:linear-gradient(180deg,var(--bg) 0%, #071029 100%);
+  color:#e6eef8;
+  font-family:'Inter',sans-serif;
+}
+
+/* Container */
+.container{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:28px;
+}
+
+/* NAV */
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+}
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+.logo{
+  width:44px;height:44px;border-radius:12px;
+  background:linear-gradient(135deg,var(--accent1),var(--accent2));
+  display:flex;align-items:center;justify-content:center;
+  font-weight:800;color:#fff;
+}
+nav ul{
+  display:flex;
+  gap:18px;
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+nav a{
+  color:rgba(230,238,248,0.95);
+  text-decoration:none;
+  font-weight:600;
+}
+.cta{
+  background:linear-gradient(90deg,var(--accent1),var(--accent2));
+  padding:10px 16px;
+  border-radius:10px;
+  font-weight:700;
+  color:#041022;
+}
+
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 460px;
+  gap:28px;
+  align-items:center;
+  padding:40px 0;
+}
+.hero h1{
+  font-size:42px;
+  margin:0 0 14px;
+  line-height:1.05;
+}
+.hero p{
+  color:rgba(230,238,248,0.80);
+  margin:0 0 18px;
+}
+.actions{display:flex;gap:12px;margin-top:10px;}
+.mockup{
+  background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));
+  border-radius:18px;padding:18px;
+  box-shadow:0 8px 30px rgba(2,6,23,0.6);
+}
+.screen{
+  width:420px;height:300px;border-radius:12px;
+  background:linear-gradient(180deg,#071525,#013243);
+  display:flex;align-items:center;justify-content:center;
+  color:#9fe7ff;font-weight:700;
+}
+
+/* Features */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  margin-top:30px;
+}
+.card{
+  background:var(--card);
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(2,6,23,0.6);
+}
+.card h3{margin:0 0 8px;}
+.small{font-size:13px;color:rgba(230,238,248,0.7);}
+
+/* Sections */
+.section-title{
+  font-size:30px;
+  margin-top:40px;
+  margin-bottom:20px;
+}
+
+/* Footer */
+footer{
+  margin-top:40px;
+  padding:20px 0;
+  text-align:center;
+  opacity:0.8;
+  border-top:1px solid rgba(255,255,255,0.05);
+}
+
+/* Responsive */
+@media (max-width:900px){
+  nav ul{display:none;}
+  .hero{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+  .screen{width:100%;height:220px;}
+}
+</style>
+</head>
+
+<body>
+
+<header class="container nav">
+  <div class="brand">
+    <div class="logo">SS</div>
+    <div>
+      <div style="font-weight:800;">Stockssutra.com</div>
+      <small style="opacity:0.7;">Market · Mutual Funds · IPO · F&O</small>
+    </div>
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#mutualfunds">Mutual Funds</a></li>
+      <li><a href="#ipo">IPO</a></li>
+      <li><a href="#fno">F&O</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a class="cta" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="container hero">
+  <div>
+    <h1>Grow Your Wealth with Smart Market Insights</h1>
+    <p>Daily stock market news, mutual fund analysis, IPO details, F&O strategies & more.</p>
+
+    <div class="actions">
+      <a class="cta" href="#blog">Read Blog</a>
+      <a class="cta" style="background:var(--glass);color:#fff;" href="#features">Features</a>
+    </div>
+
+    <div id="features" class="grid">
+      <div class="card">
+        <h3>Market Updates</h3>
+        <p class="small">Daily Nifty, Sensex trends & analysis.</p>
+      </div>
+      <div class="card">
+        <h3>Mutual Fund Tools</h3>
+        <p class="small">SIP calculator, fund screeners.</p>
+      </div>
+      <div class="card">
+        <h3>IPO & F&O</h3>
+        <p class="small">Upcoming IPOs & basic option strategies.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <div class="screen">Market Overview</div>
+  </div>
+</section>
+
+<!-- MUTUAL FUNDS -->
+<section id="mutualfunds" class="container">
+  <h2 class="section-title">Mutual Funds</h2>
+  <p>Here you can write articles, add top fund lists, etc.</p>
+</section>
+
+<!-- IPO -->
+<section id="ipo" class="container">
+  <h2 class="section-title">IPO</h2>
+  <p>Upcoming IPO list, GMP, allotment status etc.</p>
+</section>
+
+<!-- FNO -->
+<section id="fno" class="container">
+  <h2 class="section-title">F&O</h2>
+  <p>Options chain basics, common strategies, FAQs.</p>
+</section>
+
+<!-- BLOG -->
+<section id="blog" class="container">
+  <h2 class="section-title">Blog</h2>
+  <p>Add your articles here or link to your Blogger/Medium page.</p>
+</section>
+
+<footer>
+  © 2025 Stockssutra.com — All Rights Reserved
+</footer>
+
+</body>
+</html>
